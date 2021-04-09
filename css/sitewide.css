@@ -1,0 +1,89 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');*/
+
+body {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+  color: #1e4170;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+.mini-hero h1 {
+  padding: 0.25em 0 0.5em 0;
+  margin: 0;
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  outline-offset: 10px;
+  color: #703f00;
+  border-bottom: 3px solid #ffbe43;
+  transition: border-bottom 0.1s, background 0.1s;
+}
+
+a:hover {
+  background: #fcd72a60;
+  border-bottom: 5px solid #ee9b00;
+  color: black;
+}
+
+a:focus {
+  outline: 5px solid #1e4170;
+  outline-offset: 3px;
+  transition: outline-offset 0.2s;
+}
+
+button {
+  padding: 0;
+}
+
+button:hover {
+  color: black;
+}
+
+button:focus {
+  outline: 5px solid #1e4170;
+  outline-offset: 3px;
+  transition: outline-offset 0.2s;
+}
+
+/* Use to hide elements from sighted users. */
+/* Source: a11yproject.com */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Mobile-responsive container */
+.contained {
+  padding: 0 36px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 60em) {
+  .contained {
+    max-width: 60em;
+  }
+}
+@media screen and (max-width: 60em) {
+  .contained {
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 48em) {
+  .contained {
+    padding: 0 18px;
+  }
+}

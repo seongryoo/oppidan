@@ -1,0 +1,58 @@
+.call-to-action {
+  color: white;
+  background: #1e4170;
+  padding: 0.7em 2em;
+  font-weight: 700;
+  box-shadow: 0 12px 20px 0 #1e417030;
+  border-radius: 12px 0;
+  text-decoration: none;
+  border: 5px solid #1e4170;
+  transition: box-shadow 0.2s;
+}
+.call-to-action:hover {
+  background: white;
+  color: black;
+  border: 5px solid #1e4170;
+  border-bottom: 5px solid #d95734;
+  border-right: 5px solid #ffa482;
+  box-shadow: 0 4px 8px 0 #1e417080;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 72px auto 0 auto;
+}
+.breadcrumb li {
+  margin: 0;
+}
+.breadcrumb li:not(:last-child):after {
+  content: '/';
+  margin: 0 0.5em;
+}
+.breadcrumb a {
+  text-decoration: none;
+  border-bottom: none;
+  color: #1e4170;
+}
+.breadcrumb a:hover {
+  background: none;
+  border-bottom: 5px solid #1e4170;
+}
+
+.mini-hero {
+  position: relative;
+}
+.mini-hero .mini-hero-bg {
+  background: url('../img/hero-bg.png') #fcd72a;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  min-height: 10em;
+  width: 100%;
+  z-index: -10;
+}

@@ -1,0 +1,48 @@
+
+/* Hero banner */
+.hero {
+  overflow: visible;
+  position: relative;
+}
+.hero-bg {
+  background: url('../img/hero-bg.png') #fcd72a;
+  background-size: cover;
+  background-position: center 15%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  height: 100vh;
+}
+.hero .hero-text {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.hero .hero-text h2 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.25;
+  max-width: 75%;
+}
+
+@media screen and (max-width: 48em) {
+  .hero .hero-text h2 {
+    font-size: 2.5em;
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  .hero .hero-text {
+    height: 65vh;
+  }
+  .hero .hero-text h2 {
+    font-size: 2em;
+    max-width: 90%;
+    line-height: 1.333;
+  }
+}
