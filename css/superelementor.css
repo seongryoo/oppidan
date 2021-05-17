@@ -1,0 +1,68 @@
+body.elementor-page .blocks > * {
+  padding: 0;
+  margin: 0;
+}
+
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+  padding: 0 !important;
+}
+
+.elementor section.elementor-section {
+  padding: 0 !important;
+  margin: 64px 0;
+}
+
+.elementor .elementor-section .elementor-heading-title {
+  font-family: 'Open Sans', Helvetica, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.elementor .elementor-section p {
+  font-family: 'Open Sans', Helvetica, sans-serif !important;
+  margin: 0 0 16px 0;
+}
+.elementor .elementor-section .elementor-widget-heading {
+  margin: 0 0 16px 0 !important;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: none !important;
+}
+
+.elementor-column.elementor-col-50:nth-child(1), .elementor-column[data-col="50"]:nth-child(1) {
+  padding-right: 16px;
+}
+.elementor-column.elementor-col-50:nth-child(2), .elementor-column[data-col="50"]:nth-child(2) {
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 48em) {
+  .elementor-column.elementor-col-50:nth-child(1), .elementor-column[data-col="50"]:nth-child(1),
+  .elementor-column.elementor-col-50:nth-child(2), .elementor-column[data-col="50"]:nth-child(2) {
+    padding: 0;
+  }
+
+  .elementor-column.elementor-col-50 .elementor-widget-image {
+    padding: 64px 0 0 0;
+  }
+}
+.elementor-button {
+  color: white !important;
+  background: #1e4170 !important;
+  padding: 0.7em 2em !important;
+  font-weight: 700 !important;
+  box-shadow: 0 12px 20px 0 #1e417030 !important;
+  border-radius: 12px 0 !important;
+  text-decoration: none !important;
+  border: 5px solid #1e4170 !important;
+  transition: box-shadow 0.2s !important;
+}
+
+.elementor-button:hover {
+  background: white !important;
+  color: black !important;
+  border: 5px solid #1e4170 !important;
+  border-bottom: 5px solid #d95734 !important;
+  border-right: 5px solid #ffa482 !important;
+  box-shadow: 0 4px 8px 0 #1e417080 !important;
+}

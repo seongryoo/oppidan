@@ -1,0 +1,46 @@
+.blocks > * {
+	padding: 0;
+	margin: 64px 0;
+}
+.blocks h2 {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 2.5em;
+	line-height: 1.5;
+}
+.blocks p {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	margin: 0 0 16px 0;
+}
+
+.blocks .wp-block-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.blocks .wp-block-column figure {
+	margin: 0;
+}
+
+.blocks a.wp-block-button__link {
+	font-size: 1em;
+  color: white;
+  background: #1e4170;
+  padding: 0.5em 2em;
+  font-weight: 700;
+  box-shadow: 0 12px 20px 0 #1e417030;
+  border-radius: 12px 0;
+  text-decoration: none;
+  border: 5px solid #1e4170;
+  transition: box-shadow 0.2s;
+}
+
+.blocks a.wp-block-button__link:hover {
+  background: white;
+  color: black;
+  border: 5px solid #1e4170;
+  border-bottom: 5px solid #d95734;
+  border-right: 5px solid #ffa482;
+  box-shadow: 0 4px 8px 0 #1e417080;
+}

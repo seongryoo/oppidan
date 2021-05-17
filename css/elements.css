@@ -48,11 +48,11 @@
 .mini-hero .mini-hero-bg {
   background: url('../img/hero-bg.png') #fcd72a;
   background-size: cover;
-  background-position: top;
+  background-position: 0 300px;
   position: absolute;
   bottom: 0;
   height: 50vh;
-  min-height: 10em;
+  min-height: 600px;
   width: 100%;
   z-index: -10;
 }

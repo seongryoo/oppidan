@@ -13,6 +13,9 @@ $stylesheets = array(
   'elements',
   'home',
   'header',
+  'footer',
+  'superberg',
+  'superelementor',
 );
 
 // Theme features
@@ -35,6 +38,11 @@ function oppidan_enqueue() {
     wp_enqueue_style( 'oppidan-' . $slug, $style_dir . $slug . '.css' );
   }
 
+  wp_enqueue_style( 
+    'oppidan-font-awesome', 
+    get_template_directory_uri() . '/fonts/font-awesome-4.7.0/css/font-awesome.css'
+  );
+
   foreach ( $scripts as $slug ) {
     wp_enqueue_script( 'oppidan-' . $slug, $script_dir . $slug, $dependencies );
   }
@@ -46,6 +54,7 @@ function oppidan_menus() {
   $locs = array(
     'primary'   => 'Primary menu',
     'footer'    => 'Footer menu',
+    'socials'   => 'Social links',
   );
   register_nav_menus( $locs );
 }

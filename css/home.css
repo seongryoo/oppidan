@@ -7,7 +7,7 @@
 .hero-bg {
   background: url('../img/hero-bg.png') #fcd72a;
   background-size: cover;
-  background-position: center 15%;
+  background-position: bottom;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  max-height: 32em;
 }
 .hero .hero-text h2 {
   font-size: 3em;

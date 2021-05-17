@@ -1,0 +1,70 @@
+.footer .footer-socials a[href*="twitter"]:before {
+	content: "\f099";
+}
+.footer .footer-socials a[href*="facebook"]:before {
+	content: "\f082";
+}
+.footer .footer-socials a[href*="instagram"]:before {
+	content: "\f16d";
+}
+.footer .footer-socials a[href*="twitter"]:before,
+.footer .footer-socials a[href*="instagram"]:before,
+.footer .footer-socials a[href*="facebook"]:before {
+	display: inline-block;
+	width: 1.5em;
+	font-family: FontAwesome;
+	font-size: inherit;
+}
+
+.footer {
+	padding: 2em 0;
+	width: 100%;
+  background: #1e4170;
+  color: white;
+	box-sizing: border-box;
+}
+.footer .site-title {
+  font-size: 1.5em;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.footer nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer nav li {
+	margin: 0.5em 0;
+}
+
+.footer a {
+	color: white;
+	border-bottom: 0;
+	text-decoration: none;
+}
+.footer a:hover {
+	border-bottom: 5px solid #ffbe43;
+	background: none;
+	color: #ffbe43;
+}
+.footer a:focus {
+  outline: 5px solid #ffbe43;
+  outline-offset: 3px;
+  transition: outline-offset 0.2s;
+	color: #ffbe43;
+}
+
+.footer .footer-menus {
+	display: flex;
+	padding-top: 1em;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.footer .footer-menus > * {
+	flex: 0 1 auto;
+	margin-right: 4em;
+	margin-bottom: 2em;
+}

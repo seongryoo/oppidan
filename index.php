@@ -28,7 +28,7 @@
         <div class="mini-hero-bg"></div>
       </div>
 
-      <div class="contained">
+      <div class="blocks contained">
         <?php the_content(); ?>
       </div>
       <?php
