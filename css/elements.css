@@ -46,7 +46,7 @@
   position: relative;
 }
 .mini-hero .mini-hero-bg {
-  background: url('../img/hero-bg.png') #fcd72a;
+  background: url('../img/skyline-2049.png') #fcd72a;
   background-size: cover;
   background-position: 0 300px;
   position: absolute;
@@ -55,4 +55,5 @@
   min-height: 600px;
   width: 100%;
   z-index: -10;
+  opacity: 0.33;
 }

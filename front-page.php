@@ -10,7 +10,7 @@
       <div class="hero-text">
         <h2>We&rsquo;re mapping Atlanta&rsquo;s urban heat islands with community science.</h2>
         <div class="cta-wrapper">
-          <a class="call-to-action primary" href="">
+          <a class="call-to-action primary" href="/get-involved">
             Get involved
           </a>
         </div>

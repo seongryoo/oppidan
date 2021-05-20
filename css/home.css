@@ -5,14 +5,15 @@
   position: relative;
 }
 .hero-bg {
-  background: url('../img/hero-bg.png') #fcd72a;
+  background: url('../img/skyline-2049.png') #fcd72a;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
   height: 100vh;
+  opacity: 0.33;
 }
 .hero .hero-text {
   height: 75vh;
