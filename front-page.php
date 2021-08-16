@@ -16,6 +16,7 @@
         </div>
       </div>
     </div>
+        <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/ekg.svg" class="ekg">
   </section>
   <div class="contained">
   	<?php

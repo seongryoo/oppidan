@@ -1,12 +1,16 @@
 <?php
 
+$guten_scripts = array(
+  'fluid-container',
+);
 $scripts = array(
   'strudel',
   'nav',
 );
-
 $dependencies = array();
-
+$guten_styles = array(
+  'guten-styles',
+);
 $stylesheets = array(
   'fonts',
   'sitewide',
@@ -17,6 +21,9 @@ $stylesheets = array(
   'superberg',
   'superelementor',
 );
+
+// Assets file loads in js and css needed to render blocks in WP editor
+include( plugin_dir_path( __FILE__ ) . 'render-fluid-container.php' );
 
 // Theme features
 function oppidan_theme_support() {
@@ -48,6 +55,23 @@ function oppidan_enqueue() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'oppidan_enqueue' );
+
+// Gutenberg assets
+function oppidan_enqueue_blocks() {
+  $style_dir = get_template_directory_uri() . '/css/';
+  $script_dir = get_template_directory_uri() . '/js/';
+  global $guten_scripts;
+  global $guten_styles;
+  global $dependencies;
+
+  foreach ( $guten_styles as $slug ) {
+    wp_enqueue_style( 'oppidan-' . $slug, $style_dir . $slug . '.css' );
+  }
+  foreach ( $guten_scripts as $slug ) {
+    wp_enqueue_script( 'oppidan-' . $slug, $script_dir . $slug, $dependencies );
+  }
+}
+add_action( 'enqueue_block_editor_assets', 'oppidan_enqueue_blocks' );
 
 // Menu locations
 function oppidan_menus() {

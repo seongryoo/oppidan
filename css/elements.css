@@ -7,7 +7,7 @@
   border-radius: 12px 0;
   text-decoration: none;
   border: 5px solid #1e4170;
-  transition: box-shadow 0.2s;
+  transition: all 0.2s;
 }
 .call-to-action:hover {
   background: white;
@@ -56,4 +56,17 @@
   width: 100%;
   z-index: -10;
   opacity: 0.33;
+}
+
+.fluid-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fluid-container > figure {
+  flex: 1 0 25%;
+}
+.fluid-container > figure img {
+  max-width: 100%;
+  object-fit: contain;
 }

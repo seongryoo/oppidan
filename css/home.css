@@ -1,50 +1,66 @@
-
 /* Hero banner */
 .hero {
   overflow: visible;
   position: relative;
 }
 .hero-bg {
-  background: url('../img/skyline-2049.png') #fcd72a;
+  /* background: url('../img/street orange.png');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
   height: 100vh;
-  opacity: 0.33;
+  opacity: 0.4;
+}
+.hero .ekg {
+  pointer-events: none;    
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  margin-top: -4rem;
+  margin-right: 0;
 }
 .hero .hero-text {
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  max-height: 32em;
+  max-height: 32rem;
 }
 .hero .hero-text h2 {
-  font-size: 3em;
+  font-size: 4rem;
   font-weight: 700;
   margin-top: 0;
   line-height: 1.25;
   max-width: 75%;
+  margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 48rem) {
   .hero .hero-text h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     max-width: 85%;
   }
 }
 
-@media screen and (max-width: 36em) {
+@media screen and (max-width: 36rem) {
   .hero .hero-text {
-    height: 65vh;
+    height: 60vh;
   }
   .hero .hero-text h2 {
-    font-size: 2em;
+    font-size: 2rem;
     max-width: 90%;
     line-height: 1.333;
   }
+}
+
+.home main > .contained {
+  max-width: 48rem;
+  padding: 64px 18px;
 }

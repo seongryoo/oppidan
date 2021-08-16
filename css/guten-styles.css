@@ -1,0 +1,9 @@
+.oppidan-fluid {
+  border: 2px dashed green;
+  padding: 16px;
+}
+
+.oppidan-fluid .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+}
