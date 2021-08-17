@@ -1,9 +1,9 @@
 body {
 	font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   margin: 0;
-  color: #1e4170;
+  color: #002d68;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +34,7 @@ ol a:hover {
   color: black;
 }
 a:focus {
-  outline: 5px solid #1e4170;
+  outline: 5px solid #002d68;
   outline-offset: 3px;
   transition: outline-offset 0.2s;
 }
@@ -48,7 +48,7 @@ button:hover {
 }
 
 button:focus {
-  outline: 5px solid #1e4170;
+  outline: 5px solid #002d68;
   outline-offset: 3px;
   transition: outline-offset 0.2s;
 }
