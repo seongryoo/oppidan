@@ -16,7 +16,10 @@
         </div>
       </div>
     </div>
-        <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/ekg.svg" class="ekg">
+
+    <div class="ekg-container">
+      <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/ekg.svg" class="ekg">
+    </div>
   </section>
   <div class="contained">
   	<?php

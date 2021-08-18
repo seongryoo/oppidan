@@ -14,15 +14,27 @@
   height: 100vh;
   opacity: 0.4;
 }
+.hero.front-hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero .ekg-container {
+  margin-top: -4rem;
+  height: 16rem;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
 .hero .ekg {
+  height: 100%;
+  position: relative;
+  z-index: -1;
   pointer-events: none;    
   -khtml-user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  width: 100%;
-  margin-top: -4rem;
   margin-right: 0;
 }
 .hero .hero-text {
@@ -34,7 +46,7 @@
   max-height: 32rem;
 }
 .hero .hero-text h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-top: 0;
   line-height: 1.25;
@@ -47,6 +59,14 @@
     font-size: 2.5rem;
     max-width: 85%;
   }
+  .hero.front-hero {
+    flex-direction: column-reverse;
+  }
+  .hero .ekg-container {
+    margin-top: 4rem;
+    height: 12rem;
+    margin-bottom: -2rem;
+  }
 }
 
 @media screen and (max-width: 36rem) {
@@ -54,7 +74,7 @@
     height: 60vh;
   }
   .hero .hero-text h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     max-width: 90%;
     line-height: 1.333;
   }

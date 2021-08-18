@@ -1,22 +1,29 @@
 .call-to-action {
-  color: white;
-  background: #1e4170;
-  padding: 0.7em 2em;
+  color: #1e4170;
+  background: #ffbe43;
+  /* background: #1e4170; */
+  padding: 1em 2em;
   font-weight: 700;
-  box-shadow: 0 12px 20px 0 #1e417030;
-  border-radius: 12px 0;
+  box-shadow: 0 12px 20px 0 #1e41700a;
+  border-radius: 4px;
   text-decoration: none;
-  border: 5px solid #1e4170;
+  /* border: 5px solid #1e4170; */
+  position: relative;
   transition: all 0.2s;
 }
 .call-to-action:hover {
+  background: #ff9e43;
+  color: black;
+  box-shadow: 0 4px 8px 0 #1e41702f;
+}
+/* .call-to-action:hover {
   background: white;
   color: black;
   border: 5px solid #1e4170;
   border-bottom: 5px solid #d95734;
   border-right: 5px solid #ffa482;
   box-shadow: 0 4px 8px 0 #1e417080;
-}
+} */
 
 .breadcrumb ul {
   list-style: none;
