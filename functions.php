@@ -10,6 +10,7 @@ $scripts = array(
 $dependencies = array();
 $guten_styles = array(
   'guten-styles',
+  'admin-render-both',
 );
 $stylesheets = array(
   'fonts',
@@ -20,6 +21,7 @@ $stylesheets = array(
   'footer',
   'superberg',
   'superelementor',
+  'admin-render-both',
 );
 
 // Assets file loads in js and css needed to render blocks in WP editor
@@ -29,6 +31,15 @@ include( plugin_dir_path( __FILE__ ) . 'render-fluid-container.php' );
 function oppidan_theme_support() {
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'title-tag' );
+
+  register_block_style(
+    'core/image',
+    array(
+        'name'         => 'accent-shadow',
+        'label'        => 'Accent Shadow',
+        'style_handle' => 'guten-styles',
+    )
+  );
 }
 add_action( 'after_setup_theme', 'oppidan_theme_support' );
 
