@@ -1,8 +1,19 @@
-.is-style-accent-shadow img {
+.is-style-accent-shadow-cool img,
+.is-style-accent-shadow-warm img {
   width: 100%;
-  box-shadow: 64px 64px rgb(193, 232, 255);
 }
 
-.is-style-accent-shadow {
+.is-style-accent-shadow-cool,
+.is-style-accent-shadow-warm {
   padding: 0 64px 64px 0;
+}
+
+.is-style-accent-shadow-cool img {
+  box-shadow: 
+    64px 64px rgba(193, 232, 255, 1);
+}
+
+.is-style-accent-shadow-warm img {
+  box-shadow: 
+    64px 64px rgba(255, 193, 193, 1);
 }

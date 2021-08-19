@@ -35,9 +35,17 @@ function oppidan_theme_support() {
   register_block_style(
     'core/image',
     array(
-        'name'         => 'accent-shadow',
-        'label'        => 'Accent Shadow',
-        'style_handle' => 'guten-styles',
+        'name'         => 'accent-shadow-cool',
+        'label'        => 'Accent Shadow (Cool)',
+        'style_handle' => 'admin-render-both',
+    )
+  );
+  register_block_style(
+    'core/image',
+    array(
+        'name'         => 'accent-shadow-warm',
+        'label'        => 'Accent Shadow (Warm)',
+        'style_handle' => 'admin-render-both',
     )
   );
 }
