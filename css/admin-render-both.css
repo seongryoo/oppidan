@@ -1,4 +1,8 @@
 .is-style-accent-shadow img {
-  border: 10px solid orange;
-  border-radius: 10rem !important;
+  width: 100%;
+  box-shadow: 64px 64px rgb(193, 232, 255);
+}
+
+.is-style-accent-shadow {
+  padding: 0 64px 64px 0;
 }
