@@ -6,6 +6,7 @@
 .is-style-accent-shadow-cool,
 .is-style-accent-shadow-warm {
   padding: 0 64px 64px 0;
+  margin: 32px 0;
 }
 
 .is-style-accent-shadow-cool img {
