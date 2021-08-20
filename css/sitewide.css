@@ -4,6 +4,7 @@ body {
   line-height: 2;
   margin: 0;
   color: #002d68;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,6 +57,10 @@ button:focus {
   transition: outline-offset 0.2s;
 }
 
+img {
+  width: 100%;
+}
+
 /* Use to hide elements from sighted users. */
 /* Source: a11yproject.com */
 .visually-hidden {
@@ -89,4 +94,13 @@ button:focus {
   .contained {
     padding: 0 18px;
   }
+}
+
+
+.contained.narrow > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contained.narrow > *:not(.wide) {
+  max-width: 48rem;
 }
