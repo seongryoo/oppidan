@@ -18,16 +18,10 @@
     </div>
 
     <div class="ekg-container">
-      <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/ekg.svg" class="ekg">
+      <img alt="A digital illustration of a heartbeat signal. The signal begins as normal, but then transforms in the middle of the illustration and traces the shape of the Atlanta skyline. The heartbeat signal starts a sky blue, representing cooler temperatures. As it transforms into the Atlanta skyline, the signal becomes a warm red." src="<?php echo get_template_directory_uri(); ?>/img/ekg.svg" class="ekg">
     </div>
   </section>
   <div class="contained narrow">
-    <div class="wide duo">
-      <div><img src="<?php echo get_template_directory_uri(); ?>/img/torch.png"></div>
-      <div>
-      Because heat extremes disproportionately affect the most vulnerable community members, and are particularly deadly in densely populated urban centers such as Atlanta, the UrbanHeatATL team is launching its urban heat mapping initiative as part of the Atlanta Science Festival. The interactive citizen science event will investigate temperature throughout Atlanta, by lending DIY temperature sensors to students, who will track temperature over several months, through the hottest months of summer, when urban heat islands are the most pronounced. 
-      </div>
-    </div>
   	<?php
   	  if ( have_posts() ) {
   	  	while ( have_posts() ) {

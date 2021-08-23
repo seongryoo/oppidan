@@ -1,7 +1,8 @@
 .call-to-action {
+  line-height: 1.5;
   color: #1e4170;
   background: #ffbe43;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   font-weight: 700;
   box-shadow: 0 12px 20px 0 #1e41700a;
   border-radius: 4px;

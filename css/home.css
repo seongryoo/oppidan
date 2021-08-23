@@ -20,6 +20,7 @@
 }
 .hero .ekg-container {
   margin-top: -4rem;
+  margin-bottom: 2rem;
   height: 16rem;
   display: flex;
   justify-content: flex-end;

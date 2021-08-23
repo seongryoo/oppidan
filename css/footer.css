@@ -11,20 +11,21 @@
 .footer .footer-socials a[href*="instagram"]:before,
 .footer .footer-socials a[href*="facebook"]:before {
 	display: inline-block;
-	width: 1.5em;
+	width: 1.5rem;
 	font-family: FontAwesome;
 	font-size: inherit;
 }
 
 .footer {
-	padding: 2em 0;
+	margin-top: 4rem;
+	padding: 2rem 0;
 	width: 100%;
   background: #002d68;
   color: white;
 	box-sizing: border-box;
 }
 .footer .site-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
@@ -36,7 +37,7 @@
 }
 
 .footer nav li {
-	margin: 0.5em 0;
+	margin: 0.5rem 0;
 }
 
 .footer a {
@@ -58,7 +59,7 @@
 
 .footer .footer-menus {
 	display: flex;
-	padding-top: 1em;
+	padding-top: 1rem;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 }
