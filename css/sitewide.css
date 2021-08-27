@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 .contained > h2 {
-  margin: 3rem 0 1rem 0;
+  margin-bottom: 1rem;
 }
 .mini-hero h1 {
   padding: 0.25em 0 0.5em 0;
