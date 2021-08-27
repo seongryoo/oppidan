@@ -103,6 +103,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.contained.narrow > *:not(.wide) {
+.contained.narrow > *:not(.wide):not(.is-style-wide) {
   max-width: 48rem;
 }

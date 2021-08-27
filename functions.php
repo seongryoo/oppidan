@@ -48,6 +48,22 @@ function oppidan_theme_support() {
         'style_handle' => 'admin-render-both',
     )
   );
+  register_block_style(
+    'core/columns',
+    array(
+        'name'         => 'wide',
+        'label'        => 'Wide',
+        'style_handle' => 'admin-render-both',
+    )
+  );
+  register_block_style(
+    'core/columns',
+    array(
+        'name'         => 'small-img',
+        'label'        => 'Small image',
+        'style_handle' => 'admin-render-both',
+    )
+  );
 }
 add_action( 'after_setup_theme', 'oppidan_theme_support' );
 

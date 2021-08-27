@@ -7,13 +7,15 @@
 	margin: 0 0 16px 0;
 }
 .blocks .wp-block-columns {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .blocks .wp-block-column {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .blocks .wp-block-column h2 {
@@ -21,14 +23,28 @@
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.3;
+  margin: 0 0 1rem 0;
 }
 
 .blocks .wp-block-column figure {
 	margin: 0;
 }
 
-.blocks .wp-block-column img {
-  min-height: 500px;
+.blocks .wp-block-columns.is-style-small-img .wp-block-column img {
+  /* min-height: 24rem; */
+  max-width: 200px;
+}
+
+@media screen and (max-width: 48rem) {
+  .wp-block-columns {
+    flex-direction: column;
+  }
+  .wp-block-column {
+    flex: 1;
+  }
+  .wp-block-column:nth-child(2n) {
+    margin-left: 0;
+  }
 }
 
 .blocks a.wp-block-button__link {
