@@ -41,9 +41,14 @@ a.skip-link:focus {
 }
 
 .header .site-title a {
-  font-size: 1.75rem;
-  font-weight: 800;
-  letter-spacing: -1.5px;
+  display: block;
+}
+.header .site-title a:hover {
+  border-bottom: none;
+}
+.header .site-title-logo {
+  max-width: 6rem;
+  height: auto;
 }
 .header .dark-overlay {
   position: absolute;
@@ -106,7 +111,7 @@ a.skip-link:focus {
   }
   .header.open .hamburger {
     position: fixed;
-    top: 36px;
+    top: 58px;
     right: 36px;
   }
   .header .hamburger .burger-text {
@@ -158,7 +163,7 @@ a.skip-link:focus {
   }
 
   .header.open .dark-overlay {
-    opacity: 0.5;
+    opacity: 0.85;
     pointer-events: auto;
     position: fixed;
   }
@@ -166,6 +171,11 @@ a.skip-link:focus {
 @media screen and (max-width: 48rem) {
   .header nav {
     width: 60%;
+  }
+  .header.open .hamburger {
+    position: fixed;
+    top: 48px;
+    right: 18px;
   }
   .header .false-nav {
     width: 60%;

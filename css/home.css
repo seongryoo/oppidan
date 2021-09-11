@@ -22,8 +22,6 @@
   margin-top: -4rem;
   margin-bottom: 2rem;
   height: 16rem;
-  display: flex;
-  justify-content: flex-end;
   overflow: hidden;
 }
 .hero .ekg {
@@ -37,9 +35,11 @@
   -webkit-user-select: none;
   user-select: none;
   margin-right: 0;
+  object-fit: cover;
+  object-position: right;
 }
 .hero .hero-text {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,7 @@
   max-height: 32rem;
 }
 .hero .hero-text h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-top: 0;
   line-height: 1.25;
@@ -57,11 +57,11 @@
 
 @media screen and (max-width: 48rem) {
   .hero .hero-text h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     max-width: 85%;
   }
   .hero.front-hero {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
   }
   .hero .ekg-container {
     margin-top: 4rem;
@@ -78,5 +78,9 @@
     font-size: 2.5rem;
     max-width: 90%;
     line-height: 1.333;
+  }
+  .hero .ekg-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
