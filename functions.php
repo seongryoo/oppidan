@@ -27,6 +27,15 @@ $stylesheets = array(
 // Assets file loads in js and css needed to render blocks in WP editor
 include( plugin_dir_path( __FILE__ ) . 'render-fluid-container.php' );
 
+// Add page slug to the body class
+function oppidan_body_class( $classes ) {
+  global $post;
+  $slug = $post->post_name;
+  $classes[] = 'page-' . $slug;
+  return $classes;
+}
+add_filter( 'body_class','oppidan_body_class' );
+
 // Theme features
 function oppidan_theme_support() {
   add_theme_support( 'post-thumbnails' );
@@ -45,6 +54,14 @@ function oppidan_theme_support() {
     array(
         'name'         => 'accent-shadow-warm',
         'label'        => 'Accent Shadow (Warm)',
+        'style_handle' => 'admin-render-both',
+    )
+  );
+  register_block_style(
+    'core/columns',
+    array(
+        'name'         => 'hero',
+        'label'        => 'Hero banner',
         'style_handle' => 'admin-render-both',
     )
   );

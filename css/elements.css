@@ -30,12 +30,13 @@
   content: '/';
   margin: 0 0.5em;
 }
-.breadcrumb a {
+.breadcrumb li a {
   text-decoration: none;
   border-bottom: none;
   color: #1e4170;
+  font-weight: normal;
 }
-.breadcrumb a:hover {
+.breadcrumb li a:hover {
   background: none;
   border-bottom: 5px solid #1e4170;
 }

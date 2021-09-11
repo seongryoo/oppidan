@@ -40,7 +40,7 @@ a.skip-link:focus {
   align-items: center;
 }
 
-.header .site-title {
+.header .site-title a {
   font-size: 1.75rem;
   font-weight: 800;
   letter-spacing: -1.5px;

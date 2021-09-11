@@ -13,6 +13,14 @@ h1, h2, h3, h4, h5, h6 {
 .contained > h2 {
   margin-bottom: 1rem;
 }
+.blocks > h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.blocks ul {
+  list-style-position: outside;
+  padding-left: 1rem;
+}
 .mini-hero h1 {
   padding: 0.25em 0 0.5em 0;
   margin: 0;

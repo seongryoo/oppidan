@@ -44,7 +44,9 @@
 	margin: 0.5rem 0;
 }
 
-.footer a {
+.footer a,
+.footer .footer-menus a,
+.footer .footer-title a {
 	color: white;
 	border-bottom: 0;
 	text-decoration: none;

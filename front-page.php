@@ -18,7 +18,7 @@
     </div>
 
     <div class="ekg-container">
-      <img alt="A digital illustration of a heartbeat signal. The signal begins as normal, but then transforms in the middle of the illustration and traces the shape of the Atlanta skyline. The heartbeat signal starts a sky blue, representing cooler temperatures. As it transforms into the Atlanta skyline, the signal becomes a warm red." src="<?php echo get_template_directory_uri(); ?>/img/ekg.svg" class="ekg">
+      <img alt="A digital illustration of the Atlanta skyline. The skyline is drawn with a light blue color, representing cooler temperatures. As the outline of the skyline is drawn, however, the line transforms into a warmer red." src="<?php echo get_template_directory_uri(); ?>/img/skyline.svg" class="ekg">
     </div>
   </section>
   <div class="blocks contained narrow">
