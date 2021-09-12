@@ -17,9 +17,9 @@
       </div>
     </div>
 
-    <div class="ekg-container">
+    <!-- <div class="ekg-container">
       <img alt="A digital illustration of the Atlanta skyline. The skyline is drawn with a light blue color, representing cooler temperatures. As the outline of the skyline is drawn, however, the line transforms into a warmer red." src="<?php echo get_template_directory_uri(); ?>/img/skyline.svg" class="ekg">
-    </div>
+    </div> -->
   </section>
   <div class="blocks contained narrow">
   	<?php

@@ -1,50 +1,32 @@
 /* Hero banner */
 .hero {
   overflow: visible;
-  position: relative;
+  /* position: relative; */
 }
 .hero-bg {
-  /* background: url('../img/street orange.png');
+  background: url('../img/hot3.jpg');
   background-size: cover;
-  background-position: center; */
+  background-position: center;
   width: 100%;
   position: absolute;
+  top: 0;
   bottom: 0;
   z-index: -1;
-  height: 100vh;
-  opacity: 0.4;
+  height: 90vh;
+  min-height: 32rem;
+  opacity: 0.7;
 }
 .hero.front-hero {
   display: flex;
   flex-direction: column;
 }
-.hero .ekg-container {
-  margin-top: -4rem;
-  margin-bottom: 2rem;
-  height: 16rem;
-  overflow: hidden;
-}
-.hero .ekg {
-  height: 100%;
-  position: relative;
-  z-index: -1;
-  pointer-events: none;    
-  -khtml-user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  margin-right: 0;
-  object-fit: cover;
-  object-position: right;
-}
 .hero .hero-text {
-  height: 60vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  max-height: 32rem;
+  min-height: 32rem;
 }
 .hero .hero-text h2 {
   font-size: 3rem;
@@ -55,32 +37,42 @@
   margin-bottom: 3rem;
 }
 
+.hero .call-to-action {
+  background-color: #002d68;
+  color: #fff;
+  box-shadow: 0 12px 20px 0 rgba(255, 255, 255, 0.2);
+}
+.hero .call-to-action:hover {
+  background-color: #000;
+  box-shadow: 0 4px 8px 0 #1e427044;
+}
+.hero.front-hero {
+  height: 90vh;
+  min-height: 32rem;
+  /* flex-direction: column-reverse; */
+}
+.home .header {
+  position: absolute;
+  width: 100%;
+}
+
 @media screen and (max-width: 48rem) {
   .hero .hero-text h2 {
     font-size: 2.75rem;
     max-width: 85%;
   }
-  .hero.front-hero {
-    /* flex-direction: column-reverse; */
-  }
-  .hero .ekg-container {
-    margin-top: 4rem;
-    height: 12rem;
-    margin-bottom: -2rem;
-  }
 }
 
 @media screen and (max-width: 36rem) {
-  .hero .hero-text {
-    height: 60vh;
-  }
   .hero .hero-text h2 {
     font-size: 2.5rem;
     max-width: 90%;
     line-height: 1.333;
   }
-  .hero .ekg-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 28rem) {
+  .hero .hero-text h2 {
+    font-size: 2rem;
   }
 }

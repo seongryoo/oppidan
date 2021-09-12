@@ -181,3 +181,17 @@ a.skip-link:focus {
     width: 60%;
   }
 }
+
+@media screen and (max-width: 24rem) {
+  .header .site-title-logo {
+    max-width: 4rem;
+    height: auto;
+  }
+  .header .hamburger {
+    font-size: 1rem;
+  }
+  .header.open .hamburger {
+    top: 34px;
+    right: 18px;
+  }
+}
