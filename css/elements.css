@@ -45,18 +45,18 @@
   position: relative;
 }
 .mini-hero .mini-hero-bg {
-  background: rgb(185,231,255);
-  background: -moz-linear-gradient(90deg, rgba(185,231,255,1) 46%, rgba(255,184,184,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(185,231,255,1) 46%, rgba(255,184,184,1) 100%);
-  background: linear-gradient(90deg, rgba(185,231,255,1) 46%, rgba(255,184,184,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9e7ff",endColorstr="#ffb8b8",GradientType=1); 
+  background: rgb(255,254,220);
+  background: -moz-radial-gradient(circle, rgba(255,254,220,1) 32%, rgba(254,182,160,1) 95%);
+  background: -webkit-radial-gradient(circle, rgba(255,254,220,1) 32%, rgba(254,182,160,1) 95%);
+  background: radial-gradient(circle, rgba(255,254,220,1) 32%, rgba(254,182,160,1) 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffedc",endColorstr="#feb6a0",GradientType=1);  
   position: absolute;
   bottom: 0;
   height: 50vh;
   min-height: 600px;
   width: 100%;
   z-index: -10;
-  opacity: 0.33;
+  opacity: 0.8;
 }
 
 .fluid-container {

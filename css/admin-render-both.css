@@ -11,10 +11,10 @@
 
 .is-style-accent-shadow-cool img {
   box-shadow: 
-    64px 64px rgba(193, 232, 255, 1);
+    64px 64px #00459e3f;
 }
 
 .is-style-accent-shadow-warm img {
   box-shadow: 
-    64px 64px rgba(255, 193, 193, 1);
+    64px 64px #E38E80;
 }
