@@ -56,6 +56,7 @@ a.skip-link:focus {
 
 .header nav ul {
   display: flex;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -108,11 +109,6 @@ a.skip-link:focus {
     display: flex;
     align-content: center;
     z-index: 2;
-  }
-  .header.open .hamburger {
-    position: fixed;
-    top: 58px;
-    right: 36px;
   }
   .header .hamburger .burger-text {
     margin-left: 0.25rem;
@@ -168,30 +164,23 @@ a.skip-link:focus {
     position: fixed;
   }
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 48rem),
+screen and (max-height: 48rem) {
   .header nav {
     width: 60%;
-  }
-  .header.open .hamburger {
-    position: fixed;
-    top: 48px;
-    right: 18px;
   }
   .header .false-nav {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 24rem) {
+@media screen and (max-width: 24rem),
+screen and (max-height: 24rem) {
   .header .site-title-logo {
     max-width: 4rem;
     height: auto;
   }
   .header .hamburger {
     font-size: 1rem;
-  }
-  .header.open .hamburger {
-    top: 34px;
-    right: 18px;
   }
 }

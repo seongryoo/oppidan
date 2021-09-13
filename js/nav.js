@@ -1,6 +1,7 @@
 import {strudel} from './strudel.js';
 
 const onLoad = function() {
+  const body = document.getElementsByTagName('body')[0];
   const header = document.getElementById('strudel-header');
   const burger = document.getElementById('strudel-burger');
   const overlay = document.getElementById('strudel-overlay');
@@ -24,15 +25,19 @@ const onLoad = function() {
       .watch('#strudel-header', 'class')
       .watch('#strudel-burger', 'style')
       .reaction('#strudel-header nav ul li a')
-      .remove('tabIndex')
-      .remove('aria-hidden')
-      .else()
-      .set('tabIndex', -1)
-      .set('aria-hidden', true)
+          .remove('tabIndex')
+          .remove('aria-hidden')
+        .else()
+          .set('tabIndex', -1)
+          .set('aria-hidden', true)
       .reaction('#strudel-burger')
-      .set('aria-expanded', 'true')
-      .else()
-      .set('aria-expanded', 'false');
+          .set('aria-expanded', 'true')
+        .else()
+          .set('aria-expanded', 'false')
+      .reaction('body')
+          .add('noscroll')
+        .else()
+          .remove('noscroll');
 
   burgerOpen.allReact();
 };
