@@ -33,12 +33,20 @@ const onLoad = function() {
       .reaction('#strudel-burger')
           .set('aria-expanded', 'true')
         .else()
-          .set('aria-expanded', 'false')
+          .set('aria-expanded', 'false');
+  const isNoScroll = function() {
+    return !strudel.isStyle('#strudel-burger', 'display', 'none') &&
+      strudel.hasClass('#strudel-header', 'open');
+  };
+  const noScroll = strudel.query(isNoScroll)
+      .watch('#strudel-header', 'class')
+      .watch('#strudel-burger', 'style')
       .reaction('body')
           .add('noscroll')
         .else()
           .remove('noscroll');
 
   burgerOpen.allReact();
+  noScroll.allReact();
 };
 document.addEventListener('DOMContentLoaded', onLoad);
