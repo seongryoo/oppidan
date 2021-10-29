@@ -43,6 +43,11 @@
     </nav>
   </div>
 
+  <div class="image-credit contained">
+    <p>
+      Banner photograph by Greg Keelen
+    </p>
+  </div>
 </footer>
 
 <?php wp_footer(); ?>

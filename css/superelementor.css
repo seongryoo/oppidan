@@ -128,7 +128,8 @@ body.elementor-page .blocks > * {
   flex-direction: column;
   justify-content: center;
 }
-.elementor-section.logos .elementor-widget-container a:hover img {
+.elementor-section.logos .elementor-widget-container a:hover img,
+.elementor-section.logos .elementor-widget-container a:focus img {
   opacity: 1;
   filter: grayscale(0);
 }
