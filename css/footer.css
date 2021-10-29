@@ -28,7 +28,7 @@
   color: white;
 	box-sizing: border-box;
 }
-.footer .site-title {
+.footer .site-title a {
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;

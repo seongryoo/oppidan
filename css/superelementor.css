@@ -1,6 +1,6 @@
 body.elementor-page .blocks > * {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .elementor p {
@@ -23,6 +23,7 @@ body.elementor-page .blocks > * {
 .elementor .elementor-section .elementor-heading-title {
   font-family: 'Open Sans', Helvetica, sans-serif !important;
   line-height: 1.6;
+  font-size: 1.25rem;
 }
 
 .elementor .elementor-section .elementor-heading-title h2 {
@@ -98,6 +99,42 @@ body.elementor-page .blocks > * {
 .page-news .elementor-column.elementor-col-33:nth-last-child(1) {
   margin-right: 0;
 }
+
+.elementor-section.logos .elementor-container {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.elementor-section.logos .elementor-container > * {
+  flex: 33%;
+}
+.elementor-section.logos .elementor-widget,
+.elementor-section.logos .elementor-widget-container {
+  height: 100%;
+}
+.elementor-section.logos .elementor-widget {
+  padding: 1rem;
+}
+.elementor-section.logos .elementor-widget-container a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.elementor-section.logos .elementor-widget-container a:hover img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+.elementor-section.logos .elementor-widget-container a img {
+  max-height: 8rem;
+  object-fit: contain;
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition: 0.5s opacity, 0.5s filter;
+}
+
+
 @media screen and (max-width: 48rem) {
   .page-news .elementor-section .elementor-container {
     flex-direction: column;

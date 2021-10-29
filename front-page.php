@@ -3,8 +3,11 @@
 <main id="content">
   <h1 class="visually-hidden">Urban Heat ATL Home Page</h1>
   <section class="hero front-hero">
-    <div class="hero-bg">
-    </div>
+    <img 
+      class="hero-bg" 
+      src="<?php echo get_template_directory_uri() . '/img/atl-edited.jpg' ?>" 
+      alt="A photograph of Jesse Hill Jr. Street in Atlanta, Georgia. Across the street, a mural of the late John Lewis towers. On the street below, a poster reads &ldquo;Honor the vote&rdquo; in bold letters."
+    >
 
     <div class="contained">
       <div class="hero-text">
