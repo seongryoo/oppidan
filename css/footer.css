@@ -7,12 +7,16 @@
 .footer .footer-socials a[href*="instagram"]:before {
 	content: "\f16d";
 }
+.footer .footer-socials a[href*="youtube"]:before {
+	content: "\f16a";
+}
 .footer .footer-socials a[href*="mailto"]:before {
 	content: "\f0e0";
 }
 .footer .footer-socials a[href*="twitter"]:before,
 .footer .footer-socials a[href*="instagram"]:before,
 .footer .footer-socials a[href*="mailto"]:before,
+.footer .footer-socials a[href*="youtube"]:before,
 .footer .footer-socials a[href*="facebook"]:before {
 	display: inline-block;
 	width: 1.5rem;
