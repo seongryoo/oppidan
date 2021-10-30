@@ -26,7 +26,7 @@ a.skip-link:focus {
 .header a {
   text-decoration: none;
   border-bottom: none;
-  color: #002d68;
+  color: white;
 }
 .header a:hover {
   background: none;
@@ -47,6 +47,7 @@ a.skip-link:focus {
   font-size: 1.75rem;
   line-height: 1;
   margin: 1rem 0;
+  color: white;
 }
 .header .site-title a:hover {
   border-bottom: none;
@@ -72,22 +73,22 @@ a.skip-link:focus {
 .header nav ul li a {
   font-weight: 400;
 }
-.home .header a,
-.home .header .hamburger {
+.header a,
+.header .hamburger {
   color: white;
 }
-.home .header .hamburger svg {
+.header .hamburger svg {
   fill: white;
 }
-.home .header nav ul li a {
+.header nav ul li a {
   color: white;
 }
-.home .header a:hover,
-.home .header .hamburger:hover {
+.header a:hover,
+.header .hamburger:hover {
   border-color: white;
 }
-.home .header a:focus,
-.home .header .hamburger:focus {
+.header a:focus,
+.header .hamburger:focus {
   outline-color: white;
 }
 .header .hamburger {
@@ -99,7 +100,7 @@ a.skip-link:focus {
 }
 .header .dark-overlay {
   opacity: 0;
-  background: black;
+  background: white;
   top: 0;
   bottom: 0;
   left: 0;
@@ -141,6 +142,13 @@ a.skip-link:focus {
   }
   .header .hamburger svg {
     fill: white;
+  }
+  .header.open .hamburger {
+    color: #002d68;
+    outline-color: #002d68;
+  }
+  .header.open .hamburger svg {
+    fill: #002d68;
   }
   .header nav {
     position: absolute;

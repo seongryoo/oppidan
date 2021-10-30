@@ -17,6 +17,7 @@
 }
 
 .breadcrumb ul {
+  color: white;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -33,30 +34,28 @@
 .breadcrumb li a {
   text-decoration: none;
   border-bottom: none;
-  color: #1e4170;
   font-weight: normal;
+  color: white;
+  outline-color: white;
 }
 .breadcrumb li a:hover {
   background: none;
-  border-bottom: 5px solid #1e4170;
+  border-bottom: 5px solid white;
 }
 
 .mini-hero {
   position: relative;
+  color: white;
 }
 .mini-hero .mini-hero-bg {
-  background: rgb(255,254,220);
-  background: -moz-radial-gradient(circle, rgba(255,254,220,1) 32%, rgba(254,182,160,1) 95%);
-  background: -webkit-radial-gradient(circle, rgba(255,254,220,1) 32%, rgba(254,182,160,1) 95%);
-  background: radial-gradient(circle, rgba(255,254,220,1) 32%, rgba(254,182,160,1) 95%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffedc",endColorstr="#feb6a0",GradientType=1);  
+  background: url("../img/atl-reduced.jpg"), #002d68;
+  background-size: cover;
   position: absolute;
   bottom: 0;
   height: 50vh;
   min-height: 600px;
   width: 100%;
   z-index: -10;
-  opacity: 0.8;
 }
 
 .fluid-container {
