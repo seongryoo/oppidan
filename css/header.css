@@ -27,6 +27,7 @@ a.skip-link:focus {
   text-decoration: none;
   border-bottom: none;
   color: white;
+  text-shadow: 0 0 2rem #2F3336;
 }
 .header a:hover {
   background: none;
@@ -48,6 +49,7 @@ a.skip-link:focus {
   line-height: 1;
   margin: 1rem 0;
   color: white;
+  text-shadow: 0 0 2rem #2F3336;
 }
 .header .site-title a:hover {
   border-bottom: none;
@@ -76,6 +78,7 @@ a.skip-link:focus {
 .header a,
 .header .hamburger {
   color: white;
+  text-shadow: 0 0 1rem #2F3336;
 }
 .header .hamburger svg {
   fill: white;
@@ -97,6 +100,7 @@ a.skip-link:focus {
   display: none;
   font-size: 1.25rem;
   font-family: 'Open Sans', sans-serif;
+  text-shadow: 0 0 2rem #2F3336;
 }
 .header .dark-overlay {
   opacity: 0;
@@ -146,6 +150,7 @@ a.skip-link:focus {
   .header.open .hamburger {
     color: #002d68;
     outline-color: #002d68;
+    text-shadow: none;
   }
   .header.open .hamburger svg {
     fill: #002d68;
@@ -178,6 +183,7 @@ a.skip-link:focus {
   }
   .header nav ul li a {
     color: white;
+    text-shadow: none;
     display: block;
     border-bottom: none;
     padding: 0.5rem 1rem;

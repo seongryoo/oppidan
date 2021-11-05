@@ -36,6 +36,7 @@
   border-bottom: none;
   font-weight: normal;
   color: white;
+  text-shadow: 0 0 1rem #2F3336;
   outline-color: white;
 }
 .breadcrumb li a:hover {
@@ -46,6 +47,7 @@
 .mini-hero {
   position: relative;
   color: white;
+  text-shadow: 0 0 2rem #2F3336;
 }
 .mini-hero .mini-hero-bg {
   background: url("../img/atl-reduced.jpg"), #002d68;
@@ -76,4 +78,69 @@
 }
 .duo > * {
   flex: 1;
+}
+
+.blocks .ext-news {
+  margin: 2rem auto;
+}
+.blocks .ext-news p {
+  margin: 0;
+}
+.ext-news a {
+  text-decoration: none;
+}
+.ext-news a .news-headline {
+  display: inline-block;
+  text-decoration: none;
+  color: #002d68;
+  font-weight: 700;
+}
+.ext-news .publication p {
+  display: inline-block;
+  opacity: 0.75;
+}
+.ext-news .news-source:after {
+  content: ':\00a0';
+}
+
+.logo-gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 2rem 0;
+}
+.logo-gallery figure {
+  flex-basis: 24%;
+  flex-basis: calc(25% - 1.6667rem);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo-gallery figure a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Position relative does not really make sense here... */
+  /* ...But is needed for z-index of outline */
+  position: relative;
+}
+.logo-gallery figure img {
+  width: 100%;
+  height: auto;
+}
+.logo-gallery a img {
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition: filter 0.25s, opacity 0.25s;
+}
+
+.logo-gallery a:hover img,
+.logo-gallery a:focus img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+.logo-gallery a:focus {
+  z-index: 10;
 }

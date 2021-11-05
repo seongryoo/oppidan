@@ -7,3 +7,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+img:not([alt]), img[alt=""] {
+  opacity: 0.4;
+  border: 1px solid white;
+  outline: 4px solid red;
+  outline-offset: 1px;
+}
