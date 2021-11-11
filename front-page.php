@@ -5,7 +5,7 @@
   <section class="hero front-hero">
     <img 
       class="hero-bg" 
-      src="<?php echo get_template_directory_uri() . '/img/atl-reduced.jpg' ?>" 
+      src="<?php echo get_template_directory_uri() . '/img/atl-street.jpg' ?>" 
       alt="A photograph of Jesse Hill Jr. Street in Atlanta, Georgia. Across the street, a mural of the late John Lewis towers. On the street below, a poster reads &ldquo;Honor the vote&rdquo; in bold letters. Photograph by Greg Keelen."
     >
 

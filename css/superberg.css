@@ -11,8 +11,7 @@
   margin-bottom: 4rem;
 }
 .blocks .wp-block-columns {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 .blocks .wp-block-column {
 	display: flex;

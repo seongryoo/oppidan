@@ -16,22 +16,22 @@ a.skip-link:focus {
 }
 
 .header {
-  padding-top: 18px;
+  padding: 18px 0;
 }
 @media screen and (max-width: 48rem) {
   .header {
-    padding-top: 9px;
+    padding: 9px 0;
   }
 }
 .header a {
   text-decoration: none;
   border-bottom: none;
-  color: white;
-  text-shadow: 0 0 2rem #2F3336;
+  /* color: white; */
+  /* text-shadow: 0 0 2rem #2F3336; */
 }
 .header a:hover {
   background: none;
-  border-bottom: 5px solid #002d68;
+  /* border-bottom: 5px solid #002d68; */
 }
 
 .header .contained {
@@ -48,8 +48,9 @@ a.skip-link:focus {
   font-size: 1.75rem;
   line-height: 1;
   margin: 1rem 0;
-  color: white;
-  text-shadow: 0 0 2rem #2F3336;
+  color: #002d68;
+  /* color: white; */
+  /* text-shadow: 0 0 2rem #2F3336; */
 }
 .header .site-title a:hover {
   border-bottom: none;
@@ -77,22 +78,23 @@ a.skip-link:focus {
 }
 .header a,
 .header .hamburger {
-  color: white;
-  text-shadow: 0 0 1rem #2F3336;
+  /* color: white; */
+  /* text-shadow: 0 0 1rem #2F3336; */
 }
 .header .hamburger svg {
-  fill: white;
+  /* fill: white; */
 }
 .header nav ul li a {
-  color: white;
+  /* color: white; */
+  color: #002d68;
 }
 .header a:hover,
 .header .hamburger:hover {
-  border-color: white;
+  /* border-color: white; */
 }
 .header a:focus,
 .header .hamburger:focus {
-  outline-color: white;
+  /* outline-color: white; */
 }
 .header .hamburger {
   background: none;
@@ -100,7 +102,7 @@ a.skip-link:focus {
   display: none;
   font-size: 1.25rem;
   font-family: 'Open Sans', sans-serif;
-  text-shadow: 0 0 2rem #2F3336;
+  /* text-shadow: 0 0 2rem #2F3336; */
 }
 .header .dark-overlay {
   opacity: 0;
@@ -142,10 +144,12 @@ a.skip-link:focus {
     font-weight: 700;
   }
   .header .hamburger {
-    color: white;
+    color: #002d68;
+    /* color: white; */
   }
   .header .hamburger svg {
-    fill: white;
+    fill: #002d68;
+    /* fill: white; */
   }
   .header.open .hamburger {
     color: #002d68;
