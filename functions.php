@@ -13,15 +13,12 @@ $guten_styles = array(
   'admin-render-both',
 );
 $stylesheets = array(
+  'visually-hidden',
   'fonts',
-  'sitewide',
-  'elements',
-  'home',
-  'header',
-  'footer',
-  'superberg',
-  'superelementor',
-  'admin-render-both',
+  'color',
+  'layout',
+  'margins',
+  'text',
 );
 
 // Assets file loads in js and css needed to render blocks in WP editor
@@ -86,7 +83,7 @@ add_action( 'after_setup_theme', 'oppidan_theme_support' );
 
 // Style and script loading
 function oppidan_enqueue() {
-  $style_dir = get_template_directory_uri() . '/css/';
+  $style_dir = get_template_directory_uri() . '/new-css/';
   global $stylesheets;
 
   $script_dir = get_template_directory_uri() . '/js/';

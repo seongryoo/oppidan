@@ -3,8 +3,7 @@
   <div class="footer-title contained">
     <div class="site-title">
       <a href="/" class="site-title-link">
-        <span aria-hidden="true">#UrbanHeatATL</span>
-        <span class="visually-hidden">Hashtag Urban Heat ATL</span>
+        <span aria-hidden="true">#</span>UrbanHeatATL
       </a>
     </div>
   </div>
