@@ -5,3 +5,8 @@ body {
 body[noscroll] {
   overflow-y: hidden;
 }
+.contained {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
