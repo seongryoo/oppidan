@@ -83,7 +83,7 @@ add_action( 'after_setup_theme', 'oppidan_theme_support' );
 
 // Style and script loading
 function oppidan_enqueue() {
-  $style_dir = get_template_directory_uri() . '/new-css/';
+  $style_dir = get_template_directory_uri() . '/css/';
   global $stylesheets;
 
   $script_dir = get_template_directory_uri() . '/js/';
